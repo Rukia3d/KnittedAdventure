@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 8ab39dc2333144bcda9157fc1b0f268d
+timeCreated: 1486506595
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: EmbryonicInside
+  fontNames:
+  - EmbryonicInside
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
