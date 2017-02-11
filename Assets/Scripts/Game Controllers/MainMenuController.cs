@@ -5,11 +5,6 @@ using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour {
 
-	[SerializeField]
-	private Button musicBtn;
-
-	[SerializeField]
-	private Sprite[] musicIcon;
 
 	void Start () {
 		CheckToPlayMusic();
@@ -18,10 +13,10 @@ public class MainMenuController : MonoBehaviour {
 	void CheckToPlayMusic(){
 		if(GamePreferences.GetMusicState()==1){
 			MusicController.instance.PlayMusic(true);
-			musicBtn.image.sprite = musicIcon[1];
+			//musicBtn.image.sprite = musicIcon[1];
 		} else {
 			MusicController.instance.PlayMusic(false);
-			musicBtn.image.sprite = musicIcon[0];
+			//musicBtn.image.sprite = musicIcon[0];
 		}
 	}
 	
@@ -32,7 +27,20 @@ public class MainMenuController : MonoBehaviour {
 	}
 
 	public void HighscoreMenu(){
-		Application.LoadLevel("HighScore");
+		if(GamePreferences.GetDifficultyState()==1){
+			GamePreferences.SetHighScoreFor(1);
+			Application.LoadLevel("HighScoreEasy");
+		}
+
+		if(GamePreferences.GetDifficultyState()==2){
+			GamePreferences.SetHighScoreFor(2);
+			Application.LoadLevel("HighScoreMedium");
+		}
+
+		if(GamePreferences.GetDifficultyState()==3){
+			GamePreferences.SetHighScoreFor(3);
+			Application.LoadLevel("HighScoreHigh");
+		}
 	}
 
 	public void OptionsMenu(){

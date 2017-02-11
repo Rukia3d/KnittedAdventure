@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a1bcfeba4e1d34c459c652b3d50c9506
-timeCreated: 1485815872
+timeCreated: 1486699825
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,14 @@ TextureImporter:
     21300006: Quit Button
     21300008: Music off Button
     21300010: Music on Button
+    21300012: Music on Button1
+    21300014: Music off Button1
+    21300016: HardModeOn
+    21300018: HardModeOff
+    21300020: EasyModeOn
+    21300022: EasyModeOff
+    21300024: MediumModeOn
+    21300026: MediumModeOff
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -57,7 +65,7 @@ TextureImporter:
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 512
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -65,7 +73,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 512
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -73,7 +81,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: iPhone
-    maxTextureSize: 256
+    maxTextureSize: 512
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -81,7 +89,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
   - buildTarget: Android
-    maxTextureSize: 256
+    maxTextureSize: 512
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -95,10 +103,10 @@ TextureImporter:
       name: Start Game Button
       rect:
         serializedVersion: 2
-        x: 0
-        y: 207
-        width: 204
-        height: 49
+        x: 28
+        y: 362
+        width: 251
+        height: 136
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,10 +116,10 @@ TextureImporter:
       name: Highscore Button
       rect:
         serializedVersion: 2
-        x: 0
-        y: 156
-        width: 204
-        height: 50
+        x: 385
+        y: 357
+        width: 109
+        height: 108
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +129,10 @@ TextureImporter:
       name: Options Button
       rect:
         serializedVersion: 2
-        x: 0
-        y: 105
-        width: 204
-        height: 50
+        x: 386
+        y: 237
+        width: 110
+        height: 106
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +142,10 @@ TextureImporter:
       name: Quit Button
       rect:
         serializedVersion: 2
-        x: 0
-        y: 53
-        width: 205
-        height: 50
+        x: 384
+        y: 114
+        width: 111
+        height: 106
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,12 +155,12 @@ TextureImporter:
       name: Music off Button
       rect:
         serializedVersion: 2
-        x: 202
-        y: 1
-        width: 53
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 7
+        y: 3
+        width: 195
+        height: 57
+      alignment: 9
+      pivot: {x: 0.4902115, y: 0.4872055}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -160,10 +168,88 @@ TextureImporter:
       name: Music on Button
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 60
+        x: 202
+        y: 3
+        width: 197
         height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HardModeOn
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 435
+        width: 91
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HardModeOff
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 365
+        width: 89
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EasyModeOn
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 271
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: EasyModeOff
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 187
+        width: 85
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MediumModeOn
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 89
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MediumModeOff
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1
+        width: 79
+        height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

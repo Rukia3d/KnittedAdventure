@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ea202dbaa42f44771a2fbea136bca755
-timeCreated: 1485412636
+timeCreated: 1486701304
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,6 +15,8 @@ TextureImporter:
     21300016: Ready To Play The Game
     21300018: Cloud 2
     21300020: Quit Game Button
+    21300022: Coin2
+    21300024: Coin3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -100,10 +102,10 @@ TextureImporter:
       name: Resume Game Button
       rect:
         serializedVersion: 2
-        x: 0
-        y: 279
-        width: 193
-        height: 38
+        x: 6
+        y: 277
+        width: 176
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,10 +154,10 @@ TextureImporter:
       name: Cloud 3
       rect:
         serializedVersion: 2
-        x: 7
-        y: 101
-        width: 174
-        height: 46
+        x: 1
+        y: 98
+        width: 189
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +167,8 @@ TextureImporter:
       name: Pause Button
       rect:
         serializedVersion: 2
-        x: 202
-        y: 146
+        x: 201
+        y: 88
         width: 42
         height: 42
       alignment: 0
@@ -178,10 +180,10 @@ TextureImporter:
       name: Dark Cloud
       rect:
         serializedVersion: 2
-        x: 4
-        y: 44
-        width: 134
-        height: 51
+        x: 1
+        y: 21
+        width: 114
+        height: 77
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +193,10 @@ TextureImporter:
       name: Score UI
       rect:
         serializedVersion: 2
-        x: 151
-        y: 52
-        width: 87
-        height: 29
+        x: 124
+        y: 50
+        width: 118
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +206,10 @@ TextureImporter:
       name: Ready To Play The Game
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 162
-        height: 42
+        x: 115
+        y: 1
+        width: 126
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,9 +220,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6
-        y: 148
-        width: 179
-        height: 44
+        y: 146
+        width: 182
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,10 +232,36 @@ TextureImporter:
       name: Quit Game Button
       rect:
         serializedVersion: 2
-        x: 2
+        x: 6
         y: 238
-        width: 190
+        width: 174
         height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Coin2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 171
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Coin3
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 132
+        width: 44
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
 
 	void InitializeGP(){
 		if(!PlayerPrefs.HasKey("GameInit")){
+			Debug.Log("Callo to InitializeGP without the Key");
 			GamePreferences.setDifficultyState(1);
 
 			GamePreferences.SetMusicState(0);
@@ -35,7 +36,10 @@ public class GameManager : MonoBehaviour {
 			GamePreferences.setHardDifficultyCoinScore(0);
 
 			PlayerPrefs.SetInt("GameInit", 1);
+		} else {
+			GamePreferences.SetHighScoreFor(GamePreferences.GetDifficultyState());
 		}
+
 	}
 
 	void OnLevelWasLoaded(){

@@ -5,6 +5,8 @@ using UnityEngine;
 public static class GamePreferences {
 	public static string Difficulty = "Difficulty";
 
+	public static int HighScoreFor = 1;
+
 	public static string EasyDifficultyHighScore = "EasyDifficultyHighScore";
 	public static string MediumDifficultyHighScore = "MediumDifficultyHighScore";
 	public static string HardDifficultyHighScore = "HardDifficultyHighScore";
@@ -15,6 +17,14 @@ public static class GamePreferences {
 
 	public static string IsMusicOn = "IsMusicOn";
 
+	//HighScoreFor
+	public static void SetHighScoreFor(int state){
+		GamePreferences.HighScoreFor = state;
+	}
+
+	public static int GetHighScoreFor(){
+		return GamePreferences.HighScoreFor;
+	}
 	//Music
 	public static void SetMusicState(int state){
 		PlayerPrefs.SetInt(GamePreferences.IsMusicOn, state);

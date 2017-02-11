@@ -1,10 +1,10 @@
 fileFormatVersion: 2
 guid: fd2dc3b29184e4802b8095baf275239a
-timeCreated: 1485815963
+timeCreated: 1486700706
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Easy Button
+    21300000: Pause Button
     21300002: Medium Button
     21300004: Hard Button
     21300006: Check Sign
@@ -91,52 +91,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Easy Button
+      name: Pause Button
       rect:
         serializedVersion: 2
-        x: 0
-        y: 190
-        width: 253
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Medium Button
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 124
-        width: 253
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Hard Button
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 58
-        width: 253
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Check Sign
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 15
-        width: 32
-        height: 31
+        x: 13
+        y: 138
+        width: 106
+        height: 105
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +107,10 @@ TextureImporter:
       name: Back Button
       rect:
         serializedVersion: 2
-        x: 134
-        y: 0
-        width: 54
-        height: 54
+        x: 118
+        y: 35
+        width: 104
+        height: 104
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
