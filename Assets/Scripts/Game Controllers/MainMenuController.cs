@@ -26,6 +26,10 @@ public class MainMenuController : MonoBehaviour {
 		SceneFader.instance.LoadLevel("Gameplay");
 	}
 
+	public void InDevelopment(){
+		Application.LoadLevel("InDevelopment");
+	}
+
 	public void HighscoreMenu(){
 		if(GamePreferences.GetDifficultyState()==1){
 			GamePreferences.SetHighScoreFor(1);

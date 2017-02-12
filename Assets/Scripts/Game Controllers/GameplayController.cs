@@ -17,6 +17,9 @@ public class GameplayController : MonoBehaviour {
 	[SerializeField]
 	private GameObject readyButton;
 
+	[SerializeField]
+	private GameObject[] lifeIcons; 
+
 	void Awake(){
 		MakeInstance();
 	}
@@ -62,7 +65,23 @@ public class GameplayController : MonoBehaviour {
 	}
 
 	public void SetLifeScore(int score){
-		lifeText.text = "x"+score;
+		Debug.Log("Setting lifes");
+		for (int i = 0; i<lifeIcons.Length; i++) {
+			lifeIcons[i].SetActive(false);
+		}
+		if(score == 1){
+				lifeIcons[0].SetActive(true);
+		} 
+		if (score == 2){
+				lifeIcons[0].SetActive(true);
+				lifeIcons[1].SetActive(true);
+		}
+		if (score == 3){
+				lifeIcons[0].SetActive(true);
+				lifeIcons[1].SetActive(true);
+				lifeIcons[2].SetActive(true);
+		}
+
 	}
 
 
@@ -85,6 +104,7 @@ public class GameplayController : MonoBehaviour {
 		Time.timeScale = 1f;
 		readyButton.SetActive(false);
 	}
+		
 
 
 }

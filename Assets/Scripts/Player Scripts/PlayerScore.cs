@@ -18,6 +18,9 @@ public class PlayerScore : MonoBehaviour {
 	private int pointsForLife = 150;
 	private int pointsForCoin = 100;
 
+	[SerializeField]
+	private GameObject catCollision;
+
 	void Awake(){
 		cameraScript = Camera.main.GetComponent<CameraScript>();
 	}
@@ -27,6 +30,7 @@ public class PlayerScore : MonoBehaviour {
 	void Start () {
 		previousPosition = transform.position;
 		countScore = true;
+		catCollision.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -79,8 +83,14 @@ public class PlayerScore : MonoBehaviour {
 		}
 
 		if(target.tag=="Deadly"){
+			Debug.Log("Trying at animation");
 			cameraScript.moveCamera = false;
 			countScore = false;
+
+			catCollision.SetActive(true);
+			Vector3 temp = transform.position;
+
+			catCollision.transform.position = new Vector3(temp.x, temp.y-1,0);
 
 			transform.position = new Vector3(500,500,0);
 			lifeScore--;
