@@ -55,14 +55,5 @@ public class MainMenuController : MonoBehaviour {
 		Application.Quit();
 	}
 
-	public void MusicButton(){
-		if(GamePreferences.GetMusicState()== 0){
-			GamePreferences.SetMusicState(1);
-		} else {
-			GamePreferences.SetMusicState(0);
-		}
-		CheckToPlayMusic();
-	}
-
 
 }
