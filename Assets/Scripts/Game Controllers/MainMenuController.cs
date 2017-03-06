@@ -51,6 +51,10 @@ public class MainMenuController : MonoBehaviour {
 		Application.LoadLevel("Options");
 	}
 
+	public void AboutMenu(){
+		Application.LoadLevel("About");
+	}
+
 	public void QuitGame(){
 		Application.Quit();
 	}
